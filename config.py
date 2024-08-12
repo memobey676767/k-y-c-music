@@ -25,7 +25,7 @@ SONG_DOWNLOAD_DURATION = int(
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6563936773))
+OWNER_ID = int(getenv("OWNER_ID", 6532412571))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,27 +35,27 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Rq7mg/k-y-c-music",
+    "https://github.com/mamakli06/mamaklimusic1",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kycmusicdestek")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kiyicitayfaa")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kumsaldestekkanal")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kumsalmuzikk")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 30))
 
 
 # Telegram audio and video file size limit (in bytes)
@@ -84,20 +84,22 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/resim-03-14"
+   "START_IMG_URL", "https://telegra.ph/Jww-06-18"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/resim-03-14")
-PLAYLIST_IMG_URL = "https://telegra.ph/resim-03-14"
-STATS_IMG_URL = "https://telegra.ph/resim-03-14"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/resim-03-14"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/resim-03-14"
-STREAM_IMG_URL = "https://telegra.ph/resim-03-14"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/resim-03-14"
-YOUTUBE_IMG_URL = "https://telegra.ph/resim-03-14"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/resim-03-14"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/resim-03-14"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/resim-03-14"
+    "PING_IMG_URL", "https://telegra.ph/Jww-06-18"
+)
+PLAYLIST_IMG_URL = "https://telegra.ph/Jww-06-18"
+STATS_IMG_URL = "https://telegra.ph/Jww-06-18"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/Jww-06-18"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+STREAM_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/6c6cce625f4a721569703.jpg"
+
 
 
 def time_to_seconds(time):
@@ -121,4 +123,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
